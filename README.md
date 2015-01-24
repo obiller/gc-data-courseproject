@@ -21,6 +21,6 @@ The specific version of the file that was used to generate the output tidy data 
 
 3. *getData()* is the main worker function that for each set of train and test set of data loads and joins the data components such that the resulting data set has subject identification, activity name and all the relevant columns of **mean** and **standard deviation** variables
 
-4. *run_analysis()* is the main driver function that calls *getData()* on each set, then combines the two results set and finally applies the summarization criteria - which is to group by subject and activity and calculate **mean**. The function returns a data table and also writes the results into **combined_activity_data.txt** file in current working directory. This is the file that will be submitted for grading. *write.table()* is used to create the output file.
+4. *run_analysis()* is the main driver function that calls *getData()* on each set, then combines the two results set and finally applies the summarization criteria - which is to group by subject and activity and calculate **mean**. The function returns a data table and also writes the results into **combined_activity_data.txt** file in current working directory. This is the file that will be submitted for grading. *write.table()* is used to create the output file. This function can be run in an interactive R sesion to run through all steps at once.
 
 [1]: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
